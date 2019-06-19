@@ -1,0 +1,104 @@
+@ci-green: #498c45;
+@ci-highlight: lighten(@ci-green, 10%);
+
+body {
+    background-color: #F5F5F5;
+    width: 800px;
+    margin: auto;
+    padding: .2rem;
+    font-family: sans-serif;
+    background-image: url("img/luftaufnahme-bg.jpg");
+    background-size: cover;
+
+    header {
+        background-image: url("img/banner.jpg");
+        height: 80px;
+        color: white;
+        text-align: center;
+
+        .logo-container {
+            background-image: url("img/wappen.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: 10px;
+            height: 72px;
+            position: relative;
+            top: 4px;
+            
+            h1 {
+                margin: 0;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "nav subnav"
+            "nav content";
+        grid-template-columns: 150px auto;
+    
+        .nav-decoration {
+            border-left: @ci-highlight .5rem solid;
+
+            &:hover {
+                background-color: @ci-highlight;
+            }
+        }
+        
+        nav {
+            grid-area: nav;
+            background-color: @ci-green;
+            color: white;
+            grid-column: 1;
+            line-height: 2rem;
+            padding-top: 2rem;
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    padding-left: 1rem;
+                    margin-top: .5rem;
+                    .nav-decoration;
+                }
+            }
+        }
+
+        .subnav {
+            grid-area: subnav;
+            color: white;
+            background-color: @ci-green;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: .2rem 0 .2rem 0;
+
+                li {
+                    display: inline;
+                    padding-left: .2rem;
+                    font-size: .7em;
+                    .nav-decoration;
+                }
+            }
+        }
+        
+        .content {
+            grid-area: content;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            grid-column: 2;
+            background-color: white;
+
+            img {
+                display: block;
+                margin: auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
