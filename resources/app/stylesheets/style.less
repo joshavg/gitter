@@ -23,7 +23,7 @@ body {
 header {
     color: white;
     text-align: center;
-    background-color: @ci-green;
+    background-color: darken(@ci-green, 10%);
     height: 60px;
 
     :link:hover {
@@ -59,12 +59,13 @@ main {
 
     .nav-decoration {
         border-left: @ci-highlight .5rem solid;
+        color: white;
 
         &:hover {
             background-color: @ci-highlight;
         }
 
-        & a:visited {
+        :visited, :link, :active, :link:hover {
             color: white;
         }
     }
@@ -72,7 +73,6 @@ main {
     nav {
         grid-area: nav;
         background-color: @ci-green;
-        color: white;
         grid-column: 1;
         line-height: 2rem;
         font-size: .9rem;
