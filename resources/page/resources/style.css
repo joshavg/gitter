@@ -1,91 +1,146 @@
 body {
   background-color: #F5F5F5;
-  width: 800px;
-  margin: auto;
-  padding: .2rem;
+  padding: 0;
+  margin: 0;
   font-family: sans-serif;
   background-image: url("img/luftaufnahme-bg.jpg");
   background-size: cover;
 }
-body header {
-  background-image: url("img/banner.jpg");
-  height: 80px;
+body :link,
+body :visited {
+  text-decoration: none;
+  color: darkblue;
+}
+body :link:hover,
+body :link:active {
+  text-decoration: underline;
+  color: blue;
+}
+header {
   color: white;
   text-align: center;
+  background-color: #498c45;
+  height: 60px;
 }
-body header .logo-container {
-  background-image: url("img/wappen.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 10px;
-  height: 72px;
+header :link:hover {
+  text-decoration: none;
+}
+header .wappen {
   position: relative;
-  top: 4px;
+  height: 70px;
+  top: .2rem;
 }
-body header .logo-container h1 {
+header h1 {
   margin: 0;
-  padding-top: 20px;
+  display: inline-block;
+  position: relative;
+  top: -28px;
 }
-body main {
+main {
+  width: 60%;
+  min-width: 800px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: grid;
-  grid-template-areas: "nav subnav" "nav content";
-  grid-template-columns: 150px auto;
+  grid-template-areas: "nav content" "nav subnav";
+  grid-template-columns: 9.5rem auto;
 }
-body main .nav-decoration {
+main .nav-decoration {
   border-left: #5cac58 0.5rem solid;
 }
-body main .nav-decoration:hover {
+main .nav-decoration:hover {
   background-color: #5cac58;
 }
-body main nav {
+main .nav-decoration a:visited {
+  color: white;
+}
+main nav {
   grid-area: nav;
   background-color: #498c45;
   color: white;
   grid-column: 1;
   line-height: 2rem;
-  padding-top: 2rem;
+  font-size: .9rem;
 }
-body main nav ul {
+main nav ul {
   list-style: none;
   padding-left: 0;
 }
-body main nav ul li {
-  padding-left: 1rem;
+main nav ul li {
+  padding-left: .6rem;
   margin-top: .5rem;
   border-left: #5cac58 0.5rem solid;
 }
-body main nav ul li:hover {
+main nav ul li:hover {
   background-color: #5cac58;
 }
-body main .subnav {
+main nav ul li a:visited {
+  color: white;
+}
+main .subnav {
   grid-area: subnav;
   color: white;
   background-color: #498c45;
+  font-size: .8em;
+  line-height: 1.5rem;
 }
-body main .subnav ul {
+main .subnav ul {
   list-style: none;
   margin: 0;
-  padding: .2rem 0 .2rem 0;
+  padding-left: 0;
 }
-body main .subnav ul li {
-  display: inline;
+main .subnav ul li {
+  display: inline-block;
   padding-left: .2rem;
-  font-size: .7em;
+  padding-right: .2rem;
   border-left: #5cac58 0.5rem solid;
 }
-body main .subnav ul li:hover {
+main .subnav ul li:hover {
   background-color: #5cac58;
 }
-body main .content {
+main .subnav ul li a:visited {
+  color: white;
+}
+main .content {
   grid-area: content;
   padding-left: 1rem;
   padding-right: 1rem;
   grid-column: 2;
   background-color: white;
 }
-body main .content img {
+main .content h1,
+main .content h2,
+main .content h3,
+main .content h4,
+main .content h5 {
+  text-align: center;
+}
+main .content img {
   display: block;
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+main .content .shadow {
+  box-shadow: .3rem .3rem .5rem gray;
+}
+main .content .gallery {
+  display: grid;
+  box-shadow: none;
+}
+main .content .gallery img {
+  box-shadow: .3rem .3rem .5rem gray;
+}
+main .content .gallery.noshadow img {
+  box-shadow: none;
+}
+main .content .gallery-2 {
+  grid-template-columns: .5fr .5fr;
+}
+main .content .gallery-3 {
+  grid-template-columns: .33fr .33fr .33fr;
+}
+main .content .gallery-4 {
+  grid-template-columns: .25fr .25fr .25fr .25fr;
 }

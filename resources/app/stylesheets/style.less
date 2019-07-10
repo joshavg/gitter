@@ -3,102 +3,158 @@
 
 body {
     background-color: #F5F5F5;
-    width: 800px;
-    margin: auto;
-    padding: .2rem;
+    padding: 0;
+    margin: 0;
     font-family: sans-serif;
     background-image: url("img/luftaufnahme-bg.jpg");
     background-size: cover;
 
-    header {
-        background-image: url("img/banner.jpg");
-        height: 80px;
-        color: white;
-        text-align: center;
+    :link, :visited {
+        text-decoration: none;
+        color: darkblue;
+    }
 
-        .logo-container {
-            background-image: url("img/wappen.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position-x: 10px;
-            height: 72px;
-            position: relative;
-            top: 4px;
-            
-            h1 {
-                margin: 0;
-                padding-top: 20px;
+    :link:hover, :link:active {
+        text-decoration: underline;
+        color: blue;
+    }
+}
+
+header {
+    color: white;
+    text-align: center;
+    background-color: @ci-green;
+    height: 60px;
+
+    :link:hover {
+        text-decoration: none;
+    }
+
+    .wappen {
+        position: relative;
+        height: 70px;
+        top: .2rem;
+    }
+
+    h1 {
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        top: -28px;
+    }
+}
+
+main {
+    width: 60%;
+    min-width: 800px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    display: grid;
+    grid-template-areas:
+    "nav content"
+        "nav subnav";
+    grid-template-columns: 9.5rem auto;
+
+    .nav-decoration {
+        border-left: @ci-highlight .5rem solid;
+
+        &:hover {
+            background-color: @ci-highlight;
+        }
+
+        & a:visited {
+            color: white;
+        }
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: @ci-green;
+        color: white;
+        grid-column: 1;
+        line-height: 2rem;
+        font-size: .9rem;
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                padding-left: .6rem;
+                margin-top: .5rem;
+                .nav-decoration;
             }
         }
     }
 
-    main {
-        display: grid;
-        grid-template-areas:
-            "nav subnav"
-            "nav content";
-        grid-template-columns: 150px auto;
-    
-        .nav-decoration {
-            border-left: @ci-highlight .5rem solid;
+    .subnav {
+        grid-area: subnav;
+        color: white;
+        background-color: @ci-green;
+        font-size: .8em;
+        line-height: 1.5rem;
 
-            &:hover {
-                background-color: @ci-highlight;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+
+            li {
+                display: inline-block;
+                padding-left: .2rem;
+                padding-right: .2rem;
+                .nav-decoration;
             }
         }
-        
-        nav {
-            grid-area: nav;
-            background-color: @ci-green;
-            color: white;
-            grid-column: 1;
-            line-height: 2rem;
-            padding-top: 2rem;
+    }
 
-            ul {
-                list-style: none;
-                padding-left: 0;
+    .content {
+        grid-area: content;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        grid-column: 2;
+        background-color: white;
 
-                li {
-                    padding-left: 1rem;
-                    margin-top: .5rem;
-                    .nav-decoration;
-                }
-            }
+        h1, h2, h3, h4, h5 {
+            text-align: center;
         }
 
-        .subnav {
-            grid-area: subnav;
-            color: white;
-            background-color: @ci-green;
-
-            ul {
-                list-style: none;
-                margin: 0;
-                padding: .2rem 0 .2rem 0;
-
-                li {
-                    display: inline;
-                    padding-left: .2rem;
-                    font-size: .7em;
-                    .nav-decoration;
-                }
-            }
+        img {
+            display: block;
+            margin: auto;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
         }
-        
-        .content {
-            grid-area: content;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            grid-column: 2;
-            background-color: white;
+
+        .shadow {
+            box-shadow: .3rem .3rem .5rem gray;
+        }
+
+        .gallery {
+            display: grid;
+            box-shadow: none;
 
             img {
-                display: block;
-                margin: auto;
-                margin-top: 3rem;
-                margin-bottom: 3rem;
+                .shadow;
             }
+
+            &.noshadow img {
+                box-shadow: none;
+            }
+        }
+
+        .gallery-2 {
+            grid-template-columns: .5fr .5fr;
+        }
+
+        .gallery-3 {
+            grid-template-columns: .33fr .33fr .33fr;
+        }
+
+        .gallery-4 {
+            grid-template-columns: .25fr .25fr .25fr .25fr;
         }
     }
 }
