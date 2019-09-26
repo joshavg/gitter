@@ -1,9 +1,12 @@
+html {
+  min-height: 100%;
+  background-image: url("img/luftaufnahme-bg.jpg");
+  background-size: cover;
+}
 body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background-image: url("img/luftaufnahme-bg.jpg");
-  background-size: cover;
 }
 body :link,
 body :visited {
@@ -90,6 +93,7 @@ main .subnav {
   background-color: #498c45;
   font-size: .8em;
   line-height: 1.5rem;
+  text-align: right;
 }
 main .subnav ul {
   list-style: none;
@@ -126,6 +130,12 @@ main .content h3,
 main .content h4,
 main .content h5 {
   text-align: center;
+}
+main .content h1 {
+  font-size: 1.5rem;
+}
+main .content h2 {
+  font-size: 1.3rem;
 }
 main .content img {
   display: block;
