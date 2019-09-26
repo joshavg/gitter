@@ -180,3 +180,6 @@ main .content dl dt {
 main .content dl dd {
   grid-column: 2;
 }
+main .content .center {
+  text-align: center;
+}
