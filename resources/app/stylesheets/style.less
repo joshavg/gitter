@@ -170,5 +170,24 @@ main {
         .gallery-4 {
             grid-template-columns: .25fr .25fr .25fr .25fr;
         }
+
+        figcaption {
+            text-align: center;
+        }
+
+        dl {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-row-gap: .5rem;
+            margin-bottom: 3rem;
+
+            dt {
+                grid-column: 1;
+            }
+
+            dd {
+                grid-column: 2;
+            }
+        }
     }
 }

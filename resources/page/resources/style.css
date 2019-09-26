@@ -165,3 +165,18 @@ main .content .gallery-3 {
 main .content .gallery-4 {
   grid-template-columns: .25fr .25fr .25fr .25fr;
 }
+main .content figcaption {
+  text-align: center;
+}
+main .content dl {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-row-gap: .5rem;
+  margin-bottom: 3rem;
+}
+main .content dl dt {
+  grid-column: 1;
+}
+main .content dl dd {
+  grid-column: 2;
+}
