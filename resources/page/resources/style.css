@@ -123,6 +123,7 @@ main .content {
   grid-column: 2;
   background-color: white;
   background-color: #f5f5f5;
+  min-height: 25rem;
 }
 main .content h1,
 main .content h2,
