@@ -157,6 +157,14 @@ main .content .gallery img {
 main .content .gallery.noshadow img {
   box-shadow: none;
 }
+main .content .gallery figure > img {
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+main .content .gallery figure {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
 main .content .gallery-2 {
   grid-template-columns: .5fr .5fr;
 }
