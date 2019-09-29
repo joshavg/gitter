@@ -153,6 +153,7 @@ main .content .gallery {
 }
 main .content .gallery img {
   box-shadow: .3rem .3rem .5rem gray;
+  cursor: pointer;
 }
 main .content .gallery.noshadow img {
   box-shadow: none;
