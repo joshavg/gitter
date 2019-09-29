@@ -15,7 +15,9 @@ Tanz in den Mai
 </figcaption>
 </figure>
 <figure>
-![Frauenhilfe](resources/img/bilder/2019/frauenhilfe/99.jpg)
+<a href="bilder-2019-frauenhilfe.html">
+![Frauenhilfe](resources/img/bilder/2019/frauenhilfe/76.jpg)
+</a>
 <figcaption>
 Festgottesdienst zum 90. Jubiläum der Frauenhilfe
 <br>
