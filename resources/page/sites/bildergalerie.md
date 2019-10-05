@@ -7,7 +7,9 @@
 ## 2019
 <div class="gallery gallery-2">
 <figure>
+<a href="bilder-2019-maifest.html">
 ![Tanz in den Mai](resources/img/bilder/2019/maifest/25.jpg)
+</a>
 <figcaption>
 Tanz in den Mai
 <br>

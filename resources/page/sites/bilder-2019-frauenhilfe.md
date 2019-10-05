@@ -1,5 +1,5 @@
 ---
-{:title "Aktuelles"}
+{:title "90 Jahre Frauenhilfe"}
 ---
 
 # 90 Jahre Frauenhilfe
