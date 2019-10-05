@@ -1,5 +1,5 @@
 ---
-{:title "Aktuelles"}
+{:title "Tanz in den Mai"}
 ---
 
 # Tanz in den Mai
