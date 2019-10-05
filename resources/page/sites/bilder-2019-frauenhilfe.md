@@ -73,5 +73,4 @@
 ![](resources/img/bilder/2019/frauenhilfe/73.jpg)
 ![](resources/img/bilder/2019/frauenhilfe/74.jpg)
 ![](resources/img/bilder/2019/frauenhilfe/75.jpg)
-![](resources/img/bilder/2019/frauenhilfe/76.jpg)
 </div>

@@ -8,7 +8,7 @@
 <div class="gallery gallery-2">
 <figure>
 <a href="bilder-2019-maifest.html">
-![Tanz in den Mai](resources/img/bilder/2019/maifest/25.jpg)
+![Tanz in den Mai](resources/img/bilder/2019/maifest/thumb.jpg)
 </a>
 <figcaption>
 Tanz in den Mai
@@ -18,7 +18,7 @@ Tanz in den Mai
 </figure>
 <figure>
 <a href="bilder-2019-frauenhilfe.html">
-![Frauenhilfe](resources/img/bilder/2019/frauenhilfe/76.jpg)
+![Frauenhilfe](resources/img/bilder/2019/frauenhilfe/thumb.jpg)
 </a>
 <figcaption>
 Festgottesdienst zum 90. Jubiläum der Frauenhilfe
