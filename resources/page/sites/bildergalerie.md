@@ -27,7 +27,9 @@ Festgottesdienst zum 90. Jubiläum der Frauenhilfe
 </figcaption>
 </figure>
 <figure>
-![Schäferstuhl](resources/img/bilder/2019/schaeferstuhl/33.jpg)
+<a href="bilder-2019-schaeferstuhl.html">
+![Schäferstuhl](resources/img/bilder/2019/schaeferstuhl/thumb.jpg)
+</a>
 <figcaption>
 Impressionen vom Flugtag (FLY IN) am Schäferstuhl
 <br>
